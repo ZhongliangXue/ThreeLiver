@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {%  block title %}Show segmentation result of  patient{% endblock %}
+    </title>
+</head>
+<body>
+{% block content %}
+{% ifequal patient.patientID 1  %}
+
+<h2 align=center face="黑体" color="black">第一个病人的分割结果</h2>
+<h3 align=center face="黑体" color="black">包含了胸腔的全部切片：&lt;119，148&gt;</h3>
+<h4 align=center face="黑体" color="black">切片的总数量：247，胸腔的切片数量：30</h4>
+<hr width=100% size=3 color=bule alingn=center  />
+
+{% load staticfiles %}
+
+
+<table>
+    <div>第119张切片：</div>
+    <tr>
+        <td><img src="/static/image/result_PET_119.bmp" alt="分割结果"></td>
+        <td><img src="/static/image/Top-119.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image/Top10-119.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第120张切片：</div>
+    <tr>
+        <td><img src="/static/image/result_PET_120.bmp" alt="分割结果"></td>
+        <td><img src="/static/image/Top-120.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image/Top10-120.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第121张切片：</div>
+    <tr>
+        <td><img src="/static/image/result_PET_121.bmp" alt="分割结果"></td>
+        <td><img src="/static/image/Top-121.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image/Top10-121.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第122张切片：</div>
+    <tr>
+        <td><img src="/static/image/result_PET_122.bmp" alt="分割结果"></td>
+        <td><img src="/static/image/Top-122.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image/Top10-122.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第123张切片：</div>
+    <tr>
+        <td><img src="/static/image/result_PET_123.bmp" alt="分割结果"></td>
+        <td><img src="/static/image/Top-123.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image/Top10-123.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第124张切片：</div>
+    <tr>
+        <td><img src="/static/image/result_PET_124.bmp" alt="分割结果"></td>
+        <td><img src="/static/image/Top-124.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image/Top10-124.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第125张切片：</div>
+    <tr>
+        <td><img src="/static/image/result_PET_125.bmp" alt="分割结果"></td>
+        <td><img src="/static/image/Top-125.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image/Top10-125.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第126张切片：</div>
+    <tr>
+        <td><img src="/static/image/result_PET_126.bmp" alt="分割结果"></td>
+        <td><img src="/static/image/Top-126.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image/Top10-126.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第127张切片：</div>
+    <tr>
+        <td><img src="/static/image/result_PET_127.bmp" alt="分割结果"></td>
+        <td><img src="/static/image/Top-127.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image/Top10-127.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第128张切片：</div>
+    <tr>
+        <td><img src="/static/image/result_PET_128.bmp" alt="分割结果"></td>
+        <td><img src="/static/image/Top-128.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image/Top10-128.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第129张切片：</div>
+    <tr>
+        <td><img src="/static/image/result_PET_129.bmp" alt="分割结果"></td>
+        <td><img src="/static/image/Top-129.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image/Top10-129.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第130张切片：</div>
+    <tr>
+        <td><img src="/static/image/result_PET_130.bmp" alt="分割结果"></td>
+        <td><img src="/static/image/Top-130.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image/Top10-130.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第131张切片：</div>
+    <tr>
+        <td><img src="/static/image/result_PET_131.bmp" alt="分割结果"></td>
+        <td><img src="/static/image/Top-131.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image/Top10-131.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第132张切片：</div>
+    <tr>
+        <td><img src="/static/image/result_PET_132.bmp" alt="分割结果"></td>
+        <td><img src="/static/image/Top-132.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image/Top10-132.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第133张切片：</div>
+    <tr>
+        <td><img src="/static/image/result_PET_133.bmp" alt="分割结果"></td>
+        <td><img src="/static/image/Top-133.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image/Top10-133.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第134张切片：</div>
+    <tr>
+        <td><img src="/static/image/result_PET_134.bmp" alt="分割结果"></td>
+        <td><img src="/static/image/Top-134.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image/Top10-134.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第135张切片：</div>
+    <tr>
+        <td><img src="/static/image/result_PET_135.bmp" alt="分割结果"></td>
+        <td><img src="/static/image/Top-135.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image/Top10-135.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第136张切片：</div>
+    <tr>
+        <td><img src="/static/image/result_PET_136.bmp" alt="分割结果"></td>
+        <td><img src="/static/image/Top-136.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image/Top10-136.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第137张切片：</div>
+    <tr>
+        <td><img src="/static/image/result_PET_137.bmp" alt="分割结果"></td>
+        <td><img src="/static/image/Top-137.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image/Top10-137.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第138张切片：</div>
+    <tr>
+        <td><img src="/static/image/result_PET_138.bmp" alt="分割结果"></td>
+        <td><img src="/static/image/Top-138.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image/Top10-138.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第139张切片：</div>
+    <tr>
+        <td><img src="/static/image/result_PET_139.bmp" alt="分割结果"></td>
+        <td><img src="/static/image/Top-139.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image/Top10-139.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第140张切片：</div>
+    <tr>
+        <td><img src="/static/image/result_PET_140.bmp" alt="分割结果"></td>
+        <td><img src="/static/image/Top-140.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image/Top10-140.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第141张切片：</div>
+    <tr>
+        <td><img src="/static/image/result_PET_141.bmp" alt="分割结果"></td>
+        <td><img src="/static/image/Top-141.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image/Top10-141.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第142张切片：</div>
+    <tr>
+        <td><img src="/static/image/result_PET_142.bmp" alt="分割结果"></td>
+        <td><img src="/static/image/Top-142.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image/Top10-142.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第143张切片：</div>
+    <tr>
+        <td><img src="/static/image/result_PET_143.bmp" alt="分割结果"></td>
+        <td><img src="/static/image/Top-143.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image/Top10-143.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第144张切片：</div>
+    <tr>
+        <td><img src="/static/image/result_PET_144.bmp" alt="分割结果"></td>
+        <td><img src="/static/image/Top-144.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image/Top10-144.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第145张切片：</div>
+    <tr>
+        <td><img src="/static/image/result_PET_145.bmp" alt="分割结果"></td>
+        <td><img src="/static/image/Top-145.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image/Top10-145.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第146张切片：</div>
+    <tr>
+        <td><img src="/static/image/result_PET_146.bmp" alt="分割结果"></td>
+        <td><img src="/static/image/Top-146.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image/Top10-146.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第147张切片：</div>
+    <tr>
+        <td><img src="/static/image/result_PET_147.bmp" alt="分割结果"></td>
+        <td><img src="/static/image/Top-147.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image/Top10-147.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第148张切片：</div>
+    <tr>
+        <td><img src="/static/image/result_PET_148.bmp" alt="分割结果"></td>
+        <td><img src="/static/image/Top-148.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image/Top10-148.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<hr width=100% size=2 color=bule alingn=center  />
+<h3 align=center face="黑体" color="black">This is the End！</h3>
+{% endifequal %}
+
+
+
+{% ifequal patient.patientID 2  %}
+
+<h2 align=center face="黑体" color="black">第二个病人的分割结果</h2>
+<h3 align=center face="黑体" color="black">包含了胸腔的全部切片：&lt;131，164&gt;</h3>
+<h4 align=center face="黑体" color="black">切片的总数量：287，胸腔的切片数量：34</h4>
+<hr width=100% size=3 color=bule alingn=center  />
+
+{% load staticfiles %}
+
+<table>
+    <div>第131张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_131.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-131.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-131.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第132张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_132.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-132.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-132.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第133张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_133.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-133.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-133.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第134张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_134.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-134.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-134.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第135张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_135.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-135.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-135.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第136张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_136.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-136.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-136.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第137张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_137.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-137.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-137.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第138张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_138.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-138.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-138.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第139张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_139.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-139.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-139.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第140张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_140.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-140.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-140.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第141张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_141.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-141.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-141.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第142张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_142.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-142.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-142.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第143张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_143.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-143.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-143.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第144张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_144.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-144.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-144.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第145张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_145.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-145.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-145.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第146张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_146.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-146.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-146.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第147张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_147.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-147.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-147.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第148张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_148.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-148.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-148.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第149张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_149.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-149.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-149.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第150张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_150.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-150.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-150.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第151张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_151.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-151.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-151.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第152张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_152.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-152.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-152.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第153张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_153.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-153.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-153.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+ <table>
+    <div>第154张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_154.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-154.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-154.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+ <table>
+    <div>第155张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_155.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-155.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-155.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+ <table>
+    <div>第156张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_156.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-156.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-156.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+ <table>
+    <div>第157张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_157.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-157.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-157.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+ <table>
+    <div>第158张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_158.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-158.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-158.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+ <table>
+    <div>第159张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_159.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-159.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-159.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+ <table>
+    <div>第160张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_160.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-160.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-160.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+ <table>
+    <div>第161张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_161.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-161.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-161.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+ <table>
+    <div>第162张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_162.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-162.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-162.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+ <table>
+    <div>第163张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_163.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-163.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-163.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+ <table>
+    <div>第164张切片：</div>
+    <tr>
+        <td><img src="/static/image2/result_PET_164.bmp" alt="分割结果"></td>
+        <td><img src="/static/image2/Top-164.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image2/Top10-164.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<hr width=100% size=2 color=bule alingn=center  />
+<h3 align=center face="黑体" color="black">This is the End！</h3>
+{% endifequal %}
+
+{% ifequal patient.patientID 3  %}
+
+<h2 align=center face="黑体" color="black">第三个病人的分割结果</h2>
+<h3 align=center face="黑体" color="black">包含了胸腔的全部切片：&lt;145，178&gt;</h3>
+<h4 align=center face="黑体" color="black">切片的总数量：287，胸腔的切片数量：34</h4>
+<hr width=100% size=3 color=bule alingn=center  />
+
+{% load staticfiles %}
+
+<table>
+    <div>第145张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_145.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-145.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-145.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第146张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_146.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-146.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-146.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第147张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_147.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-147.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-147.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第148张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_148.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-148.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-148.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第149张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_149.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-149.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-149.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+ <table>
+    <div>第150张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_150.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-150.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-150.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+ <table>
+    <div>第151张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_151.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-151.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-151.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+  <table>
+    <div>第152张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_152.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-152.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-152.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+  <table>
+    <div>第153张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_153.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-153.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-153.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+  <table>
+    <div>第154张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_154.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-154.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-154.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+ <table>
+    <div>第155张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_155.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-155.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-155.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+  <table>
+    <div>第156张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_156.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-156.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-156.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+ <table>
+    <div>第157张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_157.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-157.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-157.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+ <table>
+    <div>第158张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_158.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-158.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-158.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+  <table>
+    <div>第159张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_159.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-159.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-159.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+ <table>
+    <div>第160张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_160.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-160.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-160.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第161张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_161.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-161.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-161.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第162张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_162.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-162.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-162.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第163张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_163.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-163.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-163.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第164张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_164.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-164.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-164.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第165张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_165.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-165.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-165.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第166张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_166.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-166.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-166.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第167张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_167.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-167.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-167.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第168张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_168.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-168.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-168.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第169张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_169.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-169.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-169.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第170张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_170.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-170.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-170.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+ <table>
+    <div>第171张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_171.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-171.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-171.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第172张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_172.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-172.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-172.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第173张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_173.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-173.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-173.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第174张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_174.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-174.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-174.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第175张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_175.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-175.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-175.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+ <table>
+    <div>第176张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_176.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-176.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-176.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+<table>
+    <div>第177张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_177.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-177.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-177.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+ <table>
+    <div>第178张切片：</div>
+    <tr>
+        <td><img src="/static/image3/result_PET_178.bmp" alt="分割结果"></td>
+        <td><img src="/static/image3/Top-178.bmp" alt="PET值最大的一个超像素"></td>
+        <td><img src="/static/image3/Top10-178.bmp" alt="与最大PET值相差10%以内的超像素"></td>
+    </tr>
+</table>
+    <hr width=100% size=2 color=bule alingn=center  />
+<h3 align=center face="黑体" color="black">This is the End！</h3>
+{% endifequal %}
+{% endblock %}
+
+</body>
+</html>
